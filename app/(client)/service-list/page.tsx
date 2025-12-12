@@ -29,7 +29,7 @@ export default function ServiceList() {
   const [selectedUsers, setSelectedUsers] = useState<string[]>([]);
   const [selectedService, setSelectedService] = useState<any>(null);
 
-  // Fetch users based on selected service
+  
   const { data: getUsersByService, isLoading: isLoadingUsers } =
     useGetAllUserBaseOnSubCategoryQuery(selectedService?.subCategory || "", {
       skip: !selectedService?.subCategory,
