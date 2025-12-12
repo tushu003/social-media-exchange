@@ -70,7 +70,7 @@ export default function ServiceList() {
   const handleExchangeClick = (service: any) => {
     setSelectedService(service);
     setModalStep("users");
-    setSelectedUsers([]); // Reset selected users when opening modal
+    setSelectedUsers([]); 
   };
 
   // Reset selections when modal closes
