@@ -88,7 +88,7 @@ export default function ServiceList() {
   // Modify handleSendRequest function
   const handleSendRequest = async () => {
     if (!currentUser) {
-      // Store selected users and service info before redirecting
+      
       localStorage.setItem("selectedUsers", JSON.stringify(selectedUsers));
       localStorage.setItem(
         "selectedService",
