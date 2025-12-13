@@ -41,7 +41,7 @@ const DashboardNotificationPopup: React.FC<DashboardNotificationPopupProps> = ({
   const validUser = verifiedUser();
   const { data: singleUser } = useGetSingleUserQuery(validUser?.userId);
   const singleUserData = singleUser?.data;
-  // console.log("requestList popup", requestList);
+
 
   const { data: getReadExchangeNotificaion, isLoading: isNotificationLoading } =
     useGetReadExchangeNotificaionQuery(singleUserData?._id, {
